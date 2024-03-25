@@ -1,0 +1,21 @@
+server:
+  port: 9110
+spring:
+  application:
+    name: cloud-user-center-service
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  configuration:
+    #打印sql
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #下划线转大写
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.duan.user.center.domain
+
+logging:
+  config: classpath:logback-spring.xml

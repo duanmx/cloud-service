@@ -1,0 +1,63 @@
+version: "3"
+services:
+  nacos:
+    image: nacos/nacos-server:v2.1.1
+    container_name: nacos
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+    volumes:
+      - /opt/configs/nacos/logs:/home/nacos/logs
+      - /opt/configs/nacos/init.d/custom.properties:/home/nacos/init.d/custom.properties
+      - /opt/configs/nacos/data:/home/nacos/data
+    environment:
+      - JVM_XMS=256m
+      - JVM_XMX=256m
+      - MODE=standalone
+      - PREFER_HOST_MODE=hostname
+      - SPRING_DATASOURCE_PLATFORM=mysql
+      - MYSQL_SERVICE_HOST=192.168.88.130
+      - MYSQL_SERVICE_DB_NAME=nacos
+      - MYSQL_SERVICE_PORT=3306
+      - MYSQL_SERVICE_USER=root
+      - MYSQL_SERVICE_PASSWORD=duanyu@123
+    # 依赖于redis和mysql，在启动本服务之前会先启动依赖的服务
+    depends_on:
+        - redis
+        - mysql
+  jenkins:
+    user: root # 为了避免一些权限问题 在这我使用了root
+    privileged: true
+    restart: always # 重启方式
+    image: jenkins/jenkins:lts-jdk17 # 指定服务所使用的镜像 在这里我选择了 LTS (长期支持)
+    container_name: jenkins # 容器名称
+    ports: # 对外暴露的端口定义
+      - "8080:8080" # 访问Jenkins服务端口
+      - "50000:50000"
+    environment:
+      TZ: Asia/Shanghai
+    volumes: # 卷挂载路径
+      - /opt/configs/jenkins/data:/var/jenkins_home
+    depends_on:
+      - redis
+      - mysql
+  # Redis服务
+  redis:
+    container_name: redis
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - /opt/configs/redis/redis.conf:/etc/redis/redis.conf
+    command: redis-server /etc/redis/redis.conf
+  # MySQL服务，上面的构建服务直接拷贝下来即可
+  mysql:
+    container_name: mysql
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=duanyu@123
+    volumes:
+      - /opt/configs/mysql/conf:/etc/mysql/conf.d
+      - /opt/configs/mysql/data:/var/lib/mysql

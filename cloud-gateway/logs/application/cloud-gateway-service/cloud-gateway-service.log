@@ -1,0 +1,652 @@
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:30.290 INFO 23120 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:30.317 INFO 23120 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:30.528 INFO 23120 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:30.557 INFO 23120 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:30.557 INFO 23120 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:38.848 WARN 23120 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.169 WARN 23120 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.494 WARN 23120 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.494 INFO 23120 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.507 INFO 23120 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.839 INFO 23120 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.840 INFO 23120 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.854 INFO 23120 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.928 INFO 23120 [main] org.springframework.cloud.context.scope.GenericScope BeanFactory id=42f6c404-acd9-3b7e-9bc1-989e89ee316d
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.954 INFO 23120 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.954 INFO 23120 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:39.955 INFO 23120 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:41.491 INFO 23120 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.697 INFO 23120 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBody]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:42.879 INFO 23120 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:44.062 INFO 23120 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:44.124 WARN 23120 [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:44.276 INFO 23120 [main] org.springframework.boot.web.embedded.netty.NettyWebServer Netty started on port 8086
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:45.394 INFO 23120 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:46.508 INFO 23120 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:46.520 INFO 23120 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:46.520 INFO 23120 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:52.971 ERROR 23120 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry nacos registry, cloud-gateway-service register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='192.168.88.130:8848', username='', password='', endpoint='', namespace='public', watchDelay=30000, logName='', service='cloud-gateway-service', weight=1.0, clusterName='DEFAULT', group='cloud-service-dev', namingLoadCacheAtStart='false', metadata={IPv6=[240e:383:444:6100:941d:8d9f:2991:74d8], preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.88.1', networkInterface='', port=8086, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) [spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) [spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) ~[classes/:na]
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:52.972 WARN 23120 [main] org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:55.378 INFO 23120 [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:55.394 ERROR 23120 [main] org.springframework.boot.SpringApplication Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.reflect.UndeclaredThrowableException: null
+	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147) ~[spring-core-5.3.23.jar:5.3.23]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.23.jar:5.3.23]
+	... 14 common frames omitted
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	... 28 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:56.377 WARN 23120 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:56.378 WARN 23120 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:35:56.378 WARN 23120 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:03.645 INFO 20828 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:03.665 INFO 20828 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:03.827 INFO 20828 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:03.846 INFO 20828 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:03.846 INFO 20828 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:11.960 WARN 20828 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.282 WARN 20828 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.607 WARN 20828 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.608 INFO 20828 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.618 INFO 20828 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.874 INFO 20828 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.875 INFO 20828 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.886 INFO 20828 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.953 INFO 20828 [main] org.springframework.cloud.context.scope.GenericScope BeanFactory id=42f6c404-acd9-3b7e-9bc1-989e89ee316d
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.975 INFO 20828 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.975 INFO 20828 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:12.976 INFO 20828 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:14.443 INFO 20828 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.635 INFO 20828 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.781 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBody]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:15.782 INFO 20828 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:16.951 INFO 20828 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:17.001 WARN 20828 [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:17.132 INFO 20828 [main] org.springframework.boot.web.embedded.netty.NettyWebServer Netty started on port 8086
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:18.252 INFO 20828 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:19.367 INFO 20828 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:19.375 INFO 20828 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:19.375 INFO 20828 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:25.836 ERROR 20828 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry nacos registry, cloud-gateway-service register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='192.168.88.130:8848', username='', password='', endpoint='', namespace='public', watchDelay=30000, logName='', service='cloud-gateway-service', weight=1.0, clusterName='DEFAULT', group='cloud-service-dev', namingLoadCacheAtStart='false', metadata={IPv6=[240e:383:444:6100:941d:8d9f:2991:74d8], preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.88.1', networkInterface='', port=8086, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) [spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) [spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) ~[classes/:na]
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:25.837 WARN 20828 [main] org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:28.233 INFO 20828 [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:28.248 ERROR 20828 [main] org.springframework.boot.SpringApplication Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.reflect.UndeclaredThrowableException: null
+	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147) ~[spring-core-5.3.23.jar:5.3.23]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.23.jar:5.3.23]
+	... 14 common frames omitted
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	... 28 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:29.244 WARN 20828 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:29.244 WARN 20828 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:38:29.244 WARN 20828 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:30.998 INFO 25488 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:31.017 INFO 25488 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:31.179 INFO 25488 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:31.198 INFO 25488 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:31.198 INFO 25488 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:39.305 WARN 25488 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:39.628 WARN 25488 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:39.952 WARN 25488 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:39.953 INFO 25488 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:39.964 INFO 25488 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:40.211 INFO 25488 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:40.212 INFO 25488 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:40.222 INFO 25488 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:40.282 INFO 25488 [main] org.springframework.cloud.context.scope.GenericScope BeanFactory id=42f6c404-acd9-3b7e-9bc1-989e89ee316d
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:40.304 INFO 25488 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:40.304 INFO 25488 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:40.305 INFO 25488 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:41.776 INFO 25488 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:42.970 INFO 25488 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBody]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:43.118 INFO 25488 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:44.287 INFO 25488 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:44.368 WARN 25488 [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:44.515 INFO 25488 [main] org.springframework.boot.web.embedded.netty.NettyWebServer Netty started on port 8086
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:45.633 INFO 25488 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:46.747 INFO 25488 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:46.754 INFO 25488 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:46.755 INFO 25488 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:53.207 ERROR 25488 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry nacos registry, cloud-gateway-service register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='192.168.88.130:8848', username='', password='', endpoint='', namespace='public', watchDelay=30000, logName='', service='cloud-gateway-service', weight=1.0, clusterName='DEFAULT', group='cloud-service-dev', namingLoadCacheAtStart='false', metadata={IPv6=[240e:383:444:6100:941d:8d9f:2991:74d8], preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.88.1', networkInterface='', port=8086, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) [spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) [spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) ~[classes/:na]
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:53.208 WARN 25488 [main] org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:55.610 INFO 25488 [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:55.621 ERROR 25488 [main] org.springframework.boot.SpringApplication Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.reflect.UndeclaredThrowableException: null
+	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147) ~[spring-core-5.3.23.jar:5.3.23]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.23.jar:5.3.23]
+	... 14 common frames omitted
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	... 28 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:56.620 WARN 25488 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:56.620 WARN 25488 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:56.621 WARN 25488 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:43:56.621 WARN 25488 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:42.155 INFO 26164 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:42.175 INFO 26164 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:42.326 INFO 26164 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:42.345 INFO 26164 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:42.345 INFO 26164 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:50.495 WARN 26164 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:50.816 WARN 26164 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.141 WARN 26164 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.142 INFO 26164 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.155 INFO 26164 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.437 INFO 26164 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.438 INFO 26164 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.447 INFO 26164 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.508 INFO 26164 [main] org.springframework.cloud.context.scope.GenericScope BeanFactory id=42f6c404-acd9-3b7e-9bc1-989e89ee316d
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.529 INFO 26164 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.530 INFO 26164 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:51.530 INFO 26164 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:53.018 INFO 26164 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.236 INFO 26164 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.590 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBody]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.591 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.591 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.591 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:54.591 INFO 26164 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:55.810 INFO 26164 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:55.873 WARN 26164 [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:56.010 INFO 26164 [main] org.springframework.boot.web.embedded.netty.NettyWebServer Netty started on port 8086
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:57.137 INFO 26164 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:58.278 INFO 26164 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:58.289 INFO 26164 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:46:58.289 INFO 26164 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:04.736 ERROR 26164 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry nacos registry, cloud-gateway-service register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='192.168.88.130:8848', username='', password='', endpoint='', namespace='public', watchDelay=30000, logName='', service='cloud-gateway-service', weight=1.0, clusterName='DEFAULT', group='cloud-service-dev', namingLoadCacheAtStart='false', metadata={IPv6=[240e:383:444:6100:941d:8d9f:2991:74d8], preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.88.1', networkInterface='', port=8086, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, instanceEnabled=true, ephemeral=true, failureToleranceEnabled=false}, ipDeleteTimeout=null, failFast=true}},
+
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) [spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) [spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) [spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) [spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) ~[classes/:na]
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:04.737 WARN 26164 [main] org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:07.139 INFO 26164 [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:07.149 ERROR 26164 [main] org.springframework.boot.SpringApplication Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.23.jar:5.3.23]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_201]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.reflect.UndeclaredThrowableException: null
+	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147) ~[spring-core-5.3.23.jar:5.3.23]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:83) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:232) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:133) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:98) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:86) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) ~[spring-cloud-commons-3.1.5.jar:3.1.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:57) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.23.jar:5.3.23]
+	... 14 common frames omitted
+Caused by: com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:639) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:619) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.requestToServer(NamingGrpcClientProxy.java:356) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.doRegisterService(NamingGrpcClientProxy.java:209) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.registerService(NamingGrpcClientProxy.java:123) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.registerService(NamingClientProxyDelegate.java:98) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:152) ~[nacos-client-2.2.0.jar:na]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:75) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.5.0.jar:2021.0.5.0]
+	... 28 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:07.150 WARN 26164 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:07.150 WARN 26164 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:07.151 WARN 26164 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:55.689 INFO 22064 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:55.710 INFO 22064 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:55.881 INFO 22064 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:55.902 INFO 22064 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:55.902 INFO 22064 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.424 WARN 22064 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.454 WARN 22064 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.466 WARN 22064 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.466 INFO 22064 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.479 INFO 22064 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.707 INFO 22064 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.708 INFO 22064 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.718 INFO 22064 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.786 INFO 22064 [main] org.springframework.cloud.context.scope.GenericScope BeanFactory id=42f6c404-acd9-3b7e-9bc1-989e89ee316d
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.812 INFO 22064 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.813 INFO 22064 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:47:58.813 INFO 22064 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:00.358 INFO 22064 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.552 INFO 22064 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBody]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:01.683 INFO 22064 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:02.840 INFO 22064 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:02.891 WARN 22064 [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:03.022 INFO 22064 [main] org.springframework.boot.web.embedded.netty.NettyWebServer Netty started on port 8086
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:04.143 INFO 22064 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.259 INFO 22064 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.266 INFO 22064 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.266 INFO 22064 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.423 INFO 22064 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry nacos registry, cloud-service-dev cloud-gateway-service 192.168.88.1:8086 register finished
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.445 INFO 22064 [main] com.duan.getway.CloudGatewayApplication Started CloudGatewayApplication in 11.085 seconds (JVM running for 11.465)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.452 INFO 22064 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service-dev.yml, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.452 INFO 22064 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service.yml, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:48:05.453 INFO 22064 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:49:21.110 INFO 22064 [nacos.client.cachedata.internal.notifier] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:49:21.152 WARN 22064 [nacos.client.cachedata.internal.notifier] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:49:21.172 WARN 22064 [nacos.client.cachedata.internal.notifier] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:49:21.172 INFO 22064 [nacos.client.cachedata.internal.notifier] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:49:21.182 INFO 22064 [nacos.client.cachedata.internal.notifier] org.springframework.boot.SpringApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:49:21.186 INFO 22064 [nacos.client.cachedata.internal.notifier] org.springframework.boot.SpringApplication Started application in 1.22 seconds (JVM running for 87.206)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:49:21.230 INFO 22064 [nacos.client.cachedata.internal.notifier] org.springframework.cloud.endpoint.event.RefreshEventListener Refresh keys changed: [spring.redis.lettuce.pool.max-active, spring.redis.lettuce.pool.max-idle, spring.redis.password, spring.redis.database, spring.redis.lettuce.pool.min-idle, spring.cloud.gateway.routes[0].id, spring.redis.host, spring.cloud.gateway.routes[0].uri, spring.redis.port, spring.cloud.gateway.routes[0].filters[0], spring.cloud.gateway.routes[0].predicates[0]]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:27.359 WARN 22064 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:27.358 WARN 22064 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:27.360 WARN 22064 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:27.360 WARN 22064 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:27.364 INFO 22064 [SpringApplicationShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry De-registering from Nacos Server now...
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:27.373 INFO 22064 [SpringApplicationShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry De-registration finished.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:31.786 INFO 22720 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:31.805 INFO 22720 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:31.963 INFO 22720 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:31.986 INFO 22720 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:31.986 INFO 22720 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:33.866 WARN 22720 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:33.881 WARN 22720 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:33.881 INFO 22720 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:33.891 INFO 22720 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:34.090 INFO 22720 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:34.091 INFO 22720 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:34.102 INFO 22720 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:34.163 INFO 22720 [main] org.springframework.cloud.context.scope.GenericScope BeanFactory id=42f6c404-acd9-3b7e-9bc1-989e89ee316d
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:34.186 INFO 22720 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:34.186 INFO 22720 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:34.187 INFO 22720 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:35.651 INFO 22720 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:36.844 INFO 22720 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBody]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:37.003 INFO 22720 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:38.169 INFO 22720 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:38.230 WARN 22720 [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:38.371 INFO 22720 [main] org.springframework.boot.web.embedded.netty.NettyWebServer Netty started on port 8086
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:39.495 INFO 22720 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.610 INFO 22720 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.620 INFO 22720 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.620 INFO 22720 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.759 INFO 22720 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry nacos registry, cloud-service-dev cloud-gateway-service 192.168.88.1:8086 register finished
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.786 INFO 22720 [main] com.duan.getway.CloudGatewayApplication Started CloudGatewayApplication in 10.321 seconds (JVM running for 10.71)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.792 INFO 22720 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service-dev.yml, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.803 INFO 22720 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service.yml, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:50:40.803 INFO 22720 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:55:42.225 INFO 22720 [nacos.client.cachedata.internal.notifier] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:55:42.266 WARN 22720 [nacos.client.cachedata.internal.notifier] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:55:42.275 WARN 22720 [nacos.client.cachedata.internal.notifier] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:55:42.275 INFO 22720 [nacos.client.cachedata.internal.notifier] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:55:42.285 INFO 22720 [nacos.client.cachedata.internal.notifier] org.springframework.boot.SpringApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:55:42.293 INFO 22720 [nacos.client.cachedata.internal.notifier] org.springframework.boot.SpringApplication Started application in 1.222 seconds (JVM running for 312.217)
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 22:55:42.361 INFO 22720 [nacos.client.cachedata.internal.notifier] org.springframework.cloud.endpoint.event.RefreshEventListener Refresh keys changed: [spring.redis.password, spring.redis.host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 23:00:34.237 WARN 22720 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 23:00:34.237 WARN 22720 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 23:00:34.239 WARN 22720 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 23:00:34.239 WARN 22720 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 23:00:34.242 INFO 22720 [SpringApplicationShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry De-registering from Nacos Server now...
+[cloud-gateway-service:192.168.88.1:8086] 2024-03-23 23:00:34.246 INFO 22720 [SpringApplicationShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry De-registration finished.

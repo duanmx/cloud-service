@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: cloud-gateway-service
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  config: classpath:logback-spring.xml

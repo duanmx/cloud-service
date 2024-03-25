@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.88.130:8848
+        namespace: public
+        group: cloud-service-dev
+      config:
+        server-addr: 192.168.88.130:8848
+        namespace: public
+        file-extension: yml
+        group: cloud-service-dev
+        prefix: cloud-gateway-service

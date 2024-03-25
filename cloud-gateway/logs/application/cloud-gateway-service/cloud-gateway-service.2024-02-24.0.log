@@ -1,0 +1,465 @@
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:42.885 INFO 25044 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:42.906 INFO 25044 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:43.066 INFO 25044 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:43.085 INFO 25044 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:43.086 INFO 25044 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.029 WARN 25044 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.047 WARN 25044 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.048 INFO 25044 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.059 INFO 25044 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.243 ERROR 25044 [main] org.springframework.boot.SpringApplication Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanExporter
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 37 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.244 WARN 25044 [main] org.springframework.boot.SpringApplication Unable to close ApplicationContext
+
+java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:878) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:866) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:853) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:793) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 25 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.245 WARN 25044 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.245 WARN 25044 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.245 WARN 25044 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:20:45.245 WARN 25044 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:40.873 INFO 10252 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:40.893 INFO 10252 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:41.056 INFO 10252 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:41.077 INFO 10252 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:41.077 INFO 10252 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.078 WARN 10252 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.098 WARN 10252 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.099 INFO 10252 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.109 INFO 10252 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.288 ERROR 10252 [main] org.springframework.boot.SpringApplication Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanExporter
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 37 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.289 WARN 10252 [main] org.springframework.boot.SpringApplication Unable to close ApplicationContext
+
+java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:878) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:866) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:853) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:793) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 25 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.289 WARN 10252 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.289 WARN 10252 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.290 WARN 10252 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:25:43.290 WARN 10252 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:05.835 INFO 23596 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:05.855 INFO 23596 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:06.002 INFO 23596 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:06.021 INFO 23596 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:06.021 INFO 23596 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:07.958 WARN 23596 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:07.967 WARN 23596 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:07.968 INFO 23596 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:07.977 INFO 23596 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:08.150 ERROR 23596 [main] org.springframework.boot.SpringApplication Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanExporter
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 37 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:08.151 WARN 23596 [main] org.springframework.boot.SpringApplication Unable to close ApplicationContext
+
+java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:878) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:866) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:853) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:793) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 25 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:08.152 WARN 23596 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:08.152 WARN 23596 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:08.152 WARN 23596 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:26:08.152 WARN 23596 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:17.457 INFO 22668 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:17.477 INFO 22668 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:17.633 INFO 22668 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:17.652 INFO 22668 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:17.652 INFO 22668 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.572 WARN 22668 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.586 WARN 22668 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.586 INFO 22668 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.596 INFO 22668 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.771 ERROR 22668 [main] org.springframework.boot.SpringApplication Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanExporter
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64) ~[spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:250) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:243) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:233) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:181) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:156) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-2.6.13.jar:2.6.13]
+	... 17 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 33 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 37 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.772 WARN 22668 [main] org.springframework.boot.SpringApplication Unable to close ApplicationContext
+
+java.lang.IllegalStateException: Failed to introspect Class [com.duan.common.redis.config.RedisConfig] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:361) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:418) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:765) ~[spring-beans-5.3.23.jar:5.3.23]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688) ~[na:1.8.0_201]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:764) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:669) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:661) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1300) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:878) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:866) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:853) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:793) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-2.6.13.jar:2.6.13]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-2.6.13.jar:2.6.13]
+	at com.duan.getway.CloudGatewayApplication.main(CloudGatewayApplication.java:17) [classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/connection/RedisConnectionFactory
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_201]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) ~[na:1.8.0_201]
+	at java.lang.Class.getDeclaredMethods(Class.java:1975) ~[na:1.8.0_201]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.23.jar:5.3.23]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.connection.RedisConnectionFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_201]
+	... 25 common frames omitted
+
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.773 WARN 22668 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.773 WARN 22668 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.773 WARN 22668 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:27:19.773 WARN 22668 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:49.943 INFO 18072 [main] com.alibaba.nacos.client.env.SearchableProperties properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:49.963 INFO 18072 [background-preinit] org.hibernate.validator.internal.util.Version HV000001: Hibernate Validator 6.2.5.Final
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:50.121 INFO 18072 [main] com.alibaba.cloud.nacos.NacosConfigProperties set nacos config namespace 'public' to ''
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:50.139 INFO 18072 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:50.140 INFO 18072 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.036 WARN 18072 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.045 WARN 18072 [main] com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder Ignore the empty nacos configuration and get it based on dataId[cloud-gateway-service-dev.yml] & group[cloud-service-dev]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.045 INFO 18072 [main] org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Located property source: [BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service-dev.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service.yml,cloud-service-dev'}, BootstrapPropertySource {name='bootstrapProperties-cloud-gateway-service,cloud-service-dev'}]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.056 INFO 18072 [main] com.duan.getway.CloudGatewayApplication The following 1 profile is active: "dev"
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.257 INFO 18072 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.258 INFO 18072 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.271 INFO 18072 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.331 INFO 18072 [main] org.springframework.cloud.context.scope.GenericScope BeanFactory id=42f6c404-acd9-3b7e-9bc1-989e89ee316d
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.354 INFO 18072 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.355 INFO 18072 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:52.355 INFO 18072 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:53.857 INFO 18072 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.090 INFO 18072 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [After]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Before]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Between]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Cookie]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Header]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Host]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Method]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Path]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Query]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [ReadBody]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [RemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [Weight]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:55.242 INFO 18072 [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:56.402 INFO 18072 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:56.455 WARN 18072 [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:56.594 INFO 18072 [main] org.springframework.boot.web.embedded.netty.NettyWebServer Netty started on port 8086
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:57.714 INFO 18072 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:58.837 INFO 18072 [main] org.springframework.cloud.commons.util.InetUtils Cannot determine local hostname
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:58.846 INFO 18072 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:58.846 INFO 18072 [main] com.alibaba.nacos.plugin.auth.spi.client.ClientAuthPluginManager [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:58.969 INFO 18072 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry nacos registry, cloud-service-dev cloud-gateway-service 192.168.88.1:8086 register finished
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:58.996 INFO 18072 [main] com.duan.getway.CloudGatewayApplication Started CloudGatewayApplication in 10.388 seconds (JVM running for 10.775)
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:59.002 INFO 18072 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service-dev.yml, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:59.003 INFO 18072 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service.yml, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 20:29:59.003 INFO 18072 [main] com.alibaba.cloud.nacos.refresh.NacosContextRefresher [Nacos Config] Listening config: dataId=cloud-gateway-service, group=cloud-service-dev
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 22:35:45.019 WARN 18072 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Start destroying Publisher
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 22:35:45.020 WARN 18072 [Thread-8] com.alibaba.nacos.common.notify.NotifyCenter [NotifyCenter] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 22:35:45.020 WARN 18072 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Start destroying common HttpClient
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 22:35:45.020 WARN 18072 [Thread-2] com.alibaba.nacos.common.http.HttpClientBeanHolder [HttpClientBeanHolder] Destruction of the end
+[cloud-gateway-service:192.168.88.1:8086] 2024-02-24 22:35:45.035 INFO 18072 [SpringApplicationShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry De-registering from Nacos Server now...

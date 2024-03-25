@@ -1,0 +1,1 @@
+tack deploy -c docker-compose.yml deploy_deamon
