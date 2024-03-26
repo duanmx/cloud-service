@@ -1,0 +1,42 @@
+def git_version;
+pipeline {
+    agent any
+    options {
+        timestamps()
+    }
+    parameters {
+        string(description: '开发环境:dev/测试环境:test/正式环境:prod', name: 'env',defaultValue: params.env)
+    }
+    stages {
+
+        stage('代码构建') {
+            steps {
+                sh "mvn clean install -U"
+                sh "mvn -Dmaven.test.skip=true clean package"
+            }
+        }
+
+
+
+        stage('构建镜像') {
+            steps {
+                echo "start build image"
+                script {
+                  git_version = sh(returnStdout: true,script: 'git log -1 --format="%h"').trim()
+                 }
+                sh "sh ./cloud-gateway/gateway.sh ${params.env} ${git_version}"
+            }
+        }
+
+         stage('启动程序') {
+            steps {
+                echo "start build image"
+                script {
+                  git_version = sh(returnStdout: true,script: 'git log -1 --format="%h"').trim()
+                 }
+                sh "sh ./cloud-gateway/gateway_start.sh ${params.env} ${git_version}"
+            }
+         }
+
+    }
+}

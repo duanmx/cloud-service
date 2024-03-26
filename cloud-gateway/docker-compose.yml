@@ -1,0 +1,9 @@
+version: "3"
+services:
+  cloud-gateway:
+    image: mingxuduan/cloud-gateway:latest
+    ports:
+      - "8086:8086"
+    deploy:
+      mode: replicated
+      replicas: 3
